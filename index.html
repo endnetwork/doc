@@ -1,1 +1,99 @@
-<h1>Hello End Teams</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>End Network Doc</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:title" content="END NETWORK Documentation" />
+    <meta property="og:description" content="END NETWORK is a cutting-edge blockchain network designed for high performance, security, and affordability. Join us in revolutionizing the digital landscape." />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/178134197?s=96&v=4" />
+    <meta property="og:url" content="https://endnetwork.github.io/doc/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="END NETWORK" />
+    <meta property="og:locale" content="en_US" />
+
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="navToggle">☰</button>
+
+        <ul>
+          <a href="#Introduction"><li>Introduction</li></a>
+          <a href="#Contribute"
+            ><li>Contribute</li></a
+          >
+          <a href="#Join">
+            <li>Join Community</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Introduction">
+        <h2>Introduction</h2>
+        <article>
+            <img src="https://avatars.githubusercontent.com/u/178134197?s=96&v=4" alt="END NETWORK Overview" id="network-image" />
+            <p><strong>END NETWORK</strong> is a cutting-edge blockchain network engineered to deliver superior performance and reliability, featuring:</p>
+            <ul>
+                <li><strong>Accelerated Transaction Speeds:</strong> Experience unparalleled efficiency with our high-speed transaction processing, designed to optimize operational workflows and enhance user satisfaction.</li>
+                <li><strong>Advanced Security Protocols:</strong> END NETWORK employs sophisticated security measures to protect user data and digital assets, ensuring robust defenses against potential cyber threats and vulnerabilities.</li>
+                <li><strong>Prioritized User Safety:</strong> Our network incorporates multiple layers of security to provide a secure environment, safeguarding users from risks and ensuring data integrity.</li>
+                <li><strong>Economical Accessibility:</strong> Committed to reducing barriers, END NETWORK offers a cost-efficient solution with minimized transaction fees, making blockchain technology more accessible and affordable for a diverse range of users.</li>
+            </ul>
+            <p>END NETWORK stands at the forefront of blockchain innovation, offering a reliable, secure, and economically viable platform tailored for both individual and enterprise needs. Our network is designed to support and advance the digital transformation of various sectors by providing a robust and scalable infrastructure.</p>
+            <p><strong>About:</strong> END NETWORK was initiated by the END NETWORK community as a public project. Development began in August 2024, with the goal of creating an inclusive and advanced blockchain solution. We welcome contributions and support from developers and enthusiasts around the world.</p>
+
+        </article>
+      </section>
+      <section id="Contribute">
+        <h2>Contribute to END Network</h2>
+        <article>
+          <p>
+            <p><strong>Get Involved:</strong> As the project is in its initial stages, we are actively seeking contributions and support from the community. Your input, whether through development, feedback, or sharing the project, is invaluable. Join us on our journey to revolutionize blockchain technology. Visit our <a href="https://github.com/endnetwork" target="_blank">GitHub page</a> to get involved and contribute to the project.</p>
+          </p>
+        </article>
+      </section>
+
+      <section id="Join">
+        <h2>Join the END Network Community</h2>
+        <article>
+            <p><strong>Join Our Community:</strong> Stay updated with the latest news and be a part of the growing END NETWORK community by joining our Telegram group and channel. Engage with other enthusiasts, share ideas, and get involved in discussions about the future of blockchain technology.</p>
+            <ul>
+                <li><a href="https://t.me/+6mF9ihvJo8YzY2Q9" target="_blank">Join our Telegram Group</a></li>
+                <li><a href="https://t.me/end_network" target="_blank">Follow our Telegram Channel</a></li>
+            </ul>
+        </article>
+      </section>
+    </main>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.querySelector('nav ul');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            console.log("s")
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+            navMenu.classList.remove('show');
+            }
+        });
+
+        // Close the menu when clicking on a menu item
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+            navMenu.classList.remove('show');
+            });
+        });
+
+
+    </script>
+  </body>
+</html>
